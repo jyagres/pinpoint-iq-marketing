@@ -16,9 +16,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
           <nav className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <a href="/dashboard" className="text-xl font-bold text-brand-600 hover:opacity-80 transition-opacity">Pinpoint<span className="text-blue-400">IQ</span></a>
+              <a href="/" className="text-xl font-bold text-brand-600 hover:opacity-80 transition-opacity">Pinpoint<span className="text-blue-400">IQ</span></a>
             </div>
-            <div className="text-sm text-gray-500">Geographic Market Intelligence</div>
+            <div className="flex items-center gap-6">
+              <span className="hidden sm:inline text-sm text-gray-500">Geographic Market Intelligence</span>
+              <a
+                href="https://app.pinpointiq.app/login"
+                className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors"
+              >
+                Client Login &rarr;
+              </a>
+            </div>
           </nav>
           {children}
         
