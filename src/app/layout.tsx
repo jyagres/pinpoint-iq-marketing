@@ -29,6 +29,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </nav>
           {children}
+
+          <footer className="border-t border-gray-200 mt-20 py-8 px-6">
+            <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+              <div>
+                © {new Date().getFullYear()} PinpointIQ. Operated by 2nd St Strategy.
+              </div>
+              <div className="flex items-center gap-6">
+                <a href="/privacy" className="hover:text-brand-600 transition-colors">Privacy</a>
+                <a href="https://app.pinpointiq.app/login" className="hover:text-brand-600 transition-colors">Client Login</a>
+              </div>
+            </div>
+          </footer>
         
       </body>
     </html>
